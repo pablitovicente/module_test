@@ -9,6 +9,11 @@ import (
 )
 
 func main() {
+	Hallo()
+}
+
+// Hallo calls some methods using go routines
+func Hallo() {
 	var wg sync.WaitGroup
 
 	wg.Add(3)
