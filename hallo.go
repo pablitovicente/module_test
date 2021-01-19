@@ -18,9 +18,9 @@ func Hallo() {
 
 	wg.Add(3)
 
-	go bar.Bar(&wg, 1)
-	go baz.Baz(&wg, 2)
-	go foo.Foo(&wg, 3)
+	go bar.Speak(&wg, 1)
+	go baz.Speak(&wg, 2)
+	go foo.Speak(&wg, 3)
 
 	wg.Wait()
 }
